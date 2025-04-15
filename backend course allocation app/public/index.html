@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Course Allocation App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Introduction Section -->
+        <div class="intro-section">
+            <h1>Welcome to the Course Allocation App</h1>
+            <p>Our platform helps in simplifying and streamlining course allocation for both administrators and lecturers. Whether you're an admin managing course data or a lecturer accessing your allocated courses, we provide an efficient, user-friendly interface to help you stay organized and on top of your academic duties.</p>
+        </div>
+
+        <!-- Login Form Section -->
+        <div class="login-section">
+            <div class="login-box">
+                <h2>Login</h2>
+                <form id="login-form">
+                    <!-- Role Selector -->
+                    <div class="form-group">
+                        <label for="role">Select Role</label>
+                        <select id="role" name="role" required>
+                            <option value="" disabled selected>Select Role</option>
+                            <option value="admin">Admin</option>
+                            <option value="lecturer">Lecturer</option>
+                        </select>
+                    </div>
+
+                    <!-- Admin Login -->
+                    <div id="admin-login" class="user-login">
+                        <div class="form-group">
+                            <label for="admin-username">Username</label>
+                            <input type="text" id="admin-username" name="admin-username" placeholder="Admin Username">
+                        </div>
+                        <div class="form-group">
+                            <label for="admin-password">Password</label>
+                            <input type="password" id="admin-password" name="admin-password" placeholder="Admin Password">
+                        </div>
+                    </div>
+
+                    <!-- Lecturer Login -->
+                    <div id="lecturer-login" class="user-login" style="display: none;">
+                        <div class="form-group">
+                            <label for="lecturer-id">Lecturer ID</label>
+                            <input type="text" id="lecturer-id" name="lecturer-id" placeholder="Lecturer ID">
+                        </div>
+                        <div class="form-group">
+                            <label for="lecturer-surname">Surname</label>
+                            <input type="text" id="lecturer-surname" name="lecturer-surname" placeholder="Lecturer Surname">
+                        </div>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <button type="submit" class="btn-submit">Login</button>
+                    <div class="forgot-password">
+                        
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="login.js"></script>
+</body>
+
+</html>

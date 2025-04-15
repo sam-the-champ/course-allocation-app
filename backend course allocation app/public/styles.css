@@ -1,0 +1,132 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Background */
+body {
+    background-image: url('images\ blur.jpeg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+/* Container */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    height: 80%;
+}
+
+/* Introduction Section */
+.intro-section {
+    width: 45%;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+}
+
+.intro-section h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.intro-section p {
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+/* Login Section */
+.login-section {
+    width: 45%;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+}
+
+/* Login Box */
+.login-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-box h2 {
+    margin-bottom: 30px;
+    font-size: 2em;
+}
+
+/* Form Group */
+.form-group {
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.form-group label {
+    font-size: 1.1em;
+    margin-bottom: 5px;
+    color: #fff;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    font-size: 1.1em;
+    border-radius: 5px;
+    border: 2px solid #ccc;
+    background-color: #fff;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Button */
+.btn-submit {
+    background-color: #007bff;
+    color: #fff;
+    padding: 12px 20px;
+    font-size: 1.1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+.btn-submit:hover {
+    background-color: #0056b3;
+}
+
+
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 90%;
+    }
+
+    .intro-section, .login-section {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}

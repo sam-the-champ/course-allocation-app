@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Allocate Course</title>
+  <link rel="stylesheet" href="allocate-course.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <button class="menu-toggle" id="menuToggle">&#9776;</button>
+
+
+    <!-- Sidebar and Hamburger menu -->
+    <div id="sidebar">
+    
+        <nav>
+            <ul>
+                <li><a href="admin-dashboard.html"><i class="fas fa-user-shield"></i> Admin</a></li>
+                <li><a href="add-lecturer.html" id="addLecturer"><i class="fas fa-user-plus"></i>Add Lecturer</a></li>
+                <li><a href="add-course.html" id="addCourse"><i class="fas fa-book"></i>Add Course</a></li>
+                <li><a href="view-allocations.html" id="viewAllocations"><i class="fas fa-eye"></i> View Allocations</a></li>
+                <li><a href="lecturer-list.html" id="lecturerList"><i class="fas fa-users"></i> Lecturer List</a></li>
+                <li><a href="logout.html" id="logoutBtn"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="main-content">
+  <h2>Allocate Course to Lecturer</h2>
+  <form id="allocateCourseForm">
+    <input type="text" id="lecturerId" placeholder="Lecturer ID" required />
+    <input type="text" id="courseCode" placeholder="Course Code" required />
+    <input type="text" id="courseTitle" placeholder="Course Title" required />
+    <input type="text" id="courseLevel" placeholder="Level (e.g. ND1)" required />
+    <input type="text" id="courseUnits" placeholder="Course Units" required />
+    <input type="text" id="semester" placeholder="Semester" required />
+    
+    <!-- New fields for scheduling -->
+    <label for="classDate">Class Date:</label>
+    <input type="date" id="classDate" required />
+
+    <label for="classTime">Class Time:</label>
+    <input type="time" id="classTime" required />
+
+    <button class="submit-button" type="submit">Allocate Course</button>
+  </form>
+  </div>
+
+  <script src="allocate-course.js"></script>
+</body>
+</html>

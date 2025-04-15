@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Course</title>
+    <link rel="stylesheet" href="add-course.css">
+</head>
+<body>
+
+    <!-- Sidebar (Optional) -->
+    <button class="menu-toggle" id="menuToggle">&#9776;</button>
+
+
+    <!-- Sidebar and Hamburger menu -->
+    <div id="sidebar">
+    
+        <nav>
+            <ul>
+                <li><a href="admin-dashboard.html" id="dashboard">Admin</a></li>
+                <li><a href="add-lecturer.html" id="addLecturer"><i class="fas fa-user-plus"></i>Add Lecturer</a></li>
+                <li><a href="allocate-course.html" id="allocateCourse"><i class="fas fa-tasks"></i>Allocate Course</a></li>
+                <li><a href="#" id="viewAllocations"></i>View Allocations</a></li>
+                <li><a href="#" id="lecturerList">Lecturer List</a></li>
+                <li><a href="#" id="logoutBtn">Logout</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Main Content Area -->
+    <div id="main-content">
+        <h1>Add New Course</h1>
+        <form id="add-course-form">
+            <div class="form-group">
+                <label for="course-code">Course Code</label>
+                <input type="text" id="course-code" name="course-code" required placeholder="Enter course code">
+            </div>
+
+            <div class="form-group">
+                <label for="course-title">Course Title</label>
+                <input type="text" id="course-title" name="course-title" required placeholder="Enter course title">
+            </div>
+
+            <div class="form-group">
+                <label for="semester">Semester</label>
+                <select id="semester" name="semester" required>
+                    <option value="">Select Semester</option>
+                    <option value="First Semester">First Semester</option>
+                    <option value="Second Semester">Second Semester</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="course-description">Course Description</label>
+                <textarea id="course-description" name="course-description" placeholder="Enter course description" rows="4"></textarea>
+            </div>
+
+            <div class="form-group">
+                <button type="submit" id="submit-btn">Add Course</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="add-course.js"></script>
+</body>
+</html>

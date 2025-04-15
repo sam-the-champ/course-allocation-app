@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Add Lecturer</title>
+  <link rel="stylesheet" href="add-lecturer.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <!-- Hamburger Menu -->
+ 
+  <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">&#9776;</button>
+
+  <!-- Sidebar -->
+  <div id="sidebar" role="navigation">
+    <nav>
+      <ul>
+        <li><a href="admin-dashboard.html"><i class="fas fa-user-shield"></i> Admin</a></li>
+        <li><a href="add-course.html" id="addCourse"><i class="fas fa-book"></i> Add Course</a></li>
+        <li><a href="allocate-course.html" id="allocateCourse"><i class="fas fa-tasks"></i> Allocate Course</a></li>
+        <li><a href="view-allocations.html" id="viewAllocations"><i class="fas fa-eye"></i> View Allocations</a></li>
+        <li><a href="lecturer-list.html" id="lecturerList"><i class="fas fa-users"></i> Lecturer List</a></li>
+        <li><a href="logout.html" id="logoutBtn"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <!-- Main Content -->
+  <div id="main-content">
+    <h1>Add Lecturer</h1>
+    <form id="add-lecturer-form" novalidate>
+      <div class="form-group">
+        <label for="lecturer-id">Lecturer ID</label>
+        <input type="text" id="lecturer-id" placeholder="E.g., LEC001" required>
+        <small class="error-message"></small>
+      </div>
+
+      <div class="form-group">
+        <label for="surname">Surname (in CAPITAL)</label>
+        <input type="text" id="surname" placeholder="E.g., OGUNDIMU" required>
+        <small class="error-message"></small>
+      </div>
+
+      <div class="form-group">
+        <label for="first-name">First Name</label>
+        <input type="text" id="first-name" placeholder="E.g., Samson" required>
+        <small class="error-message"></small>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" placeholder="E.g., samson@example.com" required>
+        <small class="error-message"></small>
+      </div>
+
+      <div class="form-group">
+        <label for="department">Department</label>
+        <input type="text" id="department" placeholder="E.g., Computer Science" required>
+        <small class="error-message"></small>
+      </div>
+
+      <div class="form-group">
+        <label for="phone">Phone Number (optional)</label>
+        <input type="tel" id="phone" placeholder="E.g., 08012345678">
+      </div>
+
+      <div class="form-group">
+        <label for="gender">Gender (optional)</label>
+        <select id="gender">
+          <option value="">Select gender</option>
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="title">Title/Rank</label>
+        <input type="text" id="title" placeholder="E.g., Dr, Mr, Prof." required>
+        <small class="error-message"></small>
+      </div>
+
+      <div class="form-group">
+        <button type="submit">Add Lecturer</button>
+      </div>
+    </form>
+
+    <div id="toast">Lecturer added successfully!</div>
+  </div>
+
+  <script src="add-lecturer.js"></script>
+</body>
+</html>

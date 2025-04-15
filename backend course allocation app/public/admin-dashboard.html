@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="admin-dashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">&#9776;</button>
+
+    <div id="sidebar" role="navigation">
+        <nav>
+            <ul>
+                <li><a href="add-lecturer.html" id="addLecturer"><i class="fas fa-user-plus"></i> Add Lecturer</a></li>
+                <li><a href="add-course.html" id="addCourse"><i class="fas fa-book"></i> Add Course</a></li>
+                <li><a href="allocate-course.html" id="allocateCourse"><i class="fas fa-tasks"></i> Allocate Course</a></li>
+                <li><a href="view-allocations.html" id="viewAllocations"><i class="fas fa-eye"></i> View Allocations</a></li>
+                <li><a href="#" id="lecturerList"><i class="fas fa-users"></i> Lecturer List</a></li>
+                <li><a href="#" id="logoutBtn"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div id="main-content">
+        <header>
+            <h1>Welcome Admin!</h1>
+        </header>
+
+        <div id="quick-stats" class="cards-container">
+            <div class="stat-card">
+                <h3>Total Courses</h3>
+                <p id="totalCourses">0</p>
+            </div>
+            <div class="stat-card">
+                <h3>Total Lecturers</h3>
+                <p id="totalLecturers">0</p>
+            </div>
+            <div class="stat-card">
+                <h3>Courses Allocated</h3>
+                <p id="allocatedCourses">0</p>
+            </div>
+            <div class="stat-card">
+                <h3>Unallocated Courses</h3>
+                <p id="unallocatedCourses">0</p>
+            </div>
+        </div>
+
+        <div id="content-section">
+            <!-- Dynamic content will be loaded here based on interactions -->
+        </div>
+
+        <section class="admin-notes">
+            <h2>Admin Notes</h2>
+            <p>Welcome to the Dashboard. Use the sidebar to manage lecturers and courses. Remember to allocate courses before the semester begins.</p>
+        </section>
+
+        <div class="tips-box">
+            <h3>Dashboard Tips</h3>
+            <ul>
+                <li>Click "Add lecturer" to register new staff.</li>
+                <li>Use "Allocate Course" after all the courses are added.</li>
+                <li>Check "Lecturer List" for current entries.</li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="admin-dashboard.js"></script>
+</body>
+</html>

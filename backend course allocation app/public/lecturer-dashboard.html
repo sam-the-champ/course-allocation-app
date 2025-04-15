@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lecturer Dashboard</title>
+  <link rel="stylesheet" href="lecturer-dashboard.css">
+</head>
+<body>
+  <!-- Sidebar Navigation -->
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <h2>Lecturer Dashboard</h2>
+    </div>
+    <ul class="menu">
+      <li><a href="#courses">View My Courses</a></li>
+      <li><a id="logoutBtn" href="index.html">Log Out</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main Dashboard -->
+  <main class="dashboard">
+    <!-- Welcome Message -->
+    <section class="welcome">
+      <h1>Welcome, <span id="welcomeMsg">Mr. Adedayo</span></h1>
+    </section>
+
+    <!-- Allocated Courses -->
+    <section id="courses">
+      <h2>Allocated Courses</h2>
+      <table class="courses-table">
+        <thead>
+          <tr>
+            <th>Course Code</th>
+            <th>Course Title</th>
+            <th>Level</th>
+            <th>Semester</th>
+            <th>Units</th>
+            <th>Date</th>
+            <th>Time</th>
+          </tr>
+        </thead>
+        <tbody id="coursesTableBody">
+          <!-- Dynamic content will be inserted here via JavaScript -->
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Personal Info -->
+    <section id="profile">
+      <h2>Personal Information</h2>
+      <p><strong>Name:</strong> <span id="lecturerName">Mr Adedayo</span></p>
+      <p><strong>Email:</strong> <span id="lecturerEmail">adedayo@example.com</span></p>
+      <p><strong>Department:</strong> <span id="lecturerDept">Computer Science</span></p>
+    </section>
+  </main>
+
+  <script src="lecturer-dashboard.js"></script>
+</body>
+</html>

@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    height: 100vh;
+    background: #f4f7fb;
+    color: #333;
+    overflow-x: hidden;
+    transition: all 0.3s ease;
+}
+#sidebar {
+    width: 250px;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    color: #fff;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: -250px;
+    padding-top: 30px;
+    box-shadow: 4px 0 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.4s ease;
+    border-radius: 0 10px 10px 0;
+    z-index: 999;
+}
+
+#sidebar.open {
+    transform: translateX(250px);
+}
+
+#sidebar nav ul {
+    margin-top: 30px;
+    list-style: none;
+    padding: 0;
+}
+
+#sidebar nav ul li {
+    padding: 20px 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+#sidebar nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    font-size: 18px;
+    transition: all 0.3s ease;
+}
+
+#sidebar nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding-left: 20px;
+}
+
+
+.menu-toggle {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    font-size: 30px;
+    background: transparent;
+    border: none;
+    color: #856d6d;
+    padding: 15px;
+    cursor: pointer;
+    z-index: 1000;
+    transition: all 0.3s ease;
+}
+
+.menu-toggle.open {
+    transform: rotate(90deg);
+}
+
+#main-content {
+    margin-left: 250px;
+    padding: 20px;
+    width: 100%;
+    transition: margin-left 0.4s ease;
+}
+
+#courses, #profile {
+    margin-top: 30px;
+  }
+  
+  #courses h2, #profile h2 {
+    color: #34495e;
+    margin-bottom: 20px;
+  }
+  
+  /* Courses Table Styles */
+  .courses-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .courses-table th, .courses-table td {
+    border: 1px solid #bdc3c7;
+    padding: 12px;
+    text-align: left;
+  }
+  
+  .courses-table th {
+    background-color: #34495e;
+    color: #fff;
+  }
+  
+  .courses-table tbody tr:hover {
+    background-color: #ecf0f1;
+  }
