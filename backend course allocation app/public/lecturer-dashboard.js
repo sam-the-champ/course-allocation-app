@@ -5,6 +5,18 @@ document.addEventListener("DOMContentLoaded", function () {
     alert("Lecturer ID not found. Please log in again.");
     return;
   }
+  const menuToggle = document.getElementById("menuToggle");
+    const sidebar = document.getElementById("sidebar");
+    const mainContent = document.getElementById("main-content");
+
+    // Sidebar toggle functionality
+    menuToggle.addEventListener("click", function() {
+        sidebar.classList.toggle("open");
+        mainContent.classList.toggle("with-sidebar");
+        menuToggle.classList.toggle("open");
+    });
+
+  
 
   async function getLecturerData(){
     try{

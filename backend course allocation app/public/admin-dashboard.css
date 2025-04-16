@@ -16,7 +16,7 @@ body {
 
 #sidebar {
     width: 250px;
-    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    background: linear-gradient(135deg, rgba(0, 100, 0, 1), rgba(204, 153, 0, 1));
     color: #fff;
     height: 100%;
     position: fixed;
@@ -83,7 +83,7 @@ body {
 }
 
 header {
-    background: linear-gradient(135deg, #ff3f6c, #ff7f50);
+    background: linear-gradient(135deg, green, yellow);
     color: #fff;
     padding: 40px 20px;
     border-radius: 10px;
@@ -129,25 +129,25 @@ h1 {
 }
 
 .stat-card:nth-child(1) {
-    background: linear-gradient(135deg, #fce4ec, #f8bbd0);
+    background: linear-gradient(135deg, #006400, #FFDB58);
 }
 
 .stat-card:nth-child(2) {
-    background: linear-gradient(135deg, #e1f5fe, #b3e5fc);
+    background: linear-gradient(135deg, #32CD32, #FFFF00);
 }
 
 .stat-card:nth-child(3) {
-    background: linear-gradient(135deg, #dcedc8, #c5e1a5);
+    background: linear-gradient(135deg, #556B2F, #FFC300);
 }
 
 .stat-card:nth-child(4) {
-    background: linear-gradient(135deg, #ffebee, #ffcdd2);
+    background: linear-gradient(135deg, #50C878, #FFFFE0);
 }
 
 .admin-notes {
     background-color: #fff;
     padding: 20px;
-    border-left: 5px solid #ff7f50;
+    border-left: 5px solid #FFDB58;
     margin-bottom: 30px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);

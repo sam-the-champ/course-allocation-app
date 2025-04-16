@@ -15,7 +15,7 @@ body {
 }
 #sidebar {
     width: 250px;
-    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    background: linear-gradient(135deg, rgba(0, 100, 0, 1), rgba(204, 153, 0, 1));
     color: #fff;
     height: 100%;
     position: fixed;
@@ -55,7 +55,6 @@ body {
     background-color: rgba(255, 255, 255, 0.1);
     padding-left: 20px;
 }
-
 
 .menu-toggle {
     position: fixed;
@@ -105,7 +104,7 @@ body {
   }
   
   .courses-table th {
-    background-color: #34495e;
+    background: linear-gradient(135deg, rgba(0, 100, 0, 1), rgba(204, 153, 0, 1));
     color: #fff;
   }
   

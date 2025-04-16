@@ -5,25 +5,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Lecturer Dashboard</title>
   <link rel="stylesheet" href="lecturer-dashboard.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-  <!-- Sidebar Navigation -->
-  <nav class="sidebar">
-    <div class="sidebar-header">
-      <h2>Lecturer Dashboard</h2>
-    </div>
-    <ul class="menu">
-      <li><a href="#courses">View My Courses</a></li>
-      <li><a id="logoutBtn" href="index.html">Log Out</a></li>
-    </ul>
-  </nav>
+  <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">&#9776;</button>
 
+  <div id="sidebar" role="navigation">
+      <nav>
+          <ul> 
+            <li><a href="index.html" id="logoutBtn"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+          </ul>
+      </nav>
+  </div>
+   
   <!-- Main Dashboard -->
   <main class="dashboard">
     <!-- Welcome Message -->
-    <section class="welcome">
+    <header>
       <h1>Welcome, <span id="welcomeMsg">Mr. Adedayo</span></h1>
-    </section>
+    </header>
 
     <!-- Allocated Courses -->
     <section id="courses">

@@ -7,47 +7,66 @@ body {
   }
   
   /* Sidebar Navigation Styles */
-  .sidebar {
+#sidebar {
     width: 250px;
-    height: 100vh;
-    background-color: #2c3e50;
-    color: #ecf0f1;
-    padding-top: 20px;
+    background: linear-gradient(135deg, rgba(0, 100, 0, 1), rgba(204, 153, 0, 1));
+    color: #fff;
+    height: 100%;
     position: fixed;
     top: 0;
-    left: 0;
-    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
-  }
-  
-  .sidebar-header {
-    text-align: center;
-    margin-bottom: 30px;
-  }
-  
-  .sidebar h2 {
-    font-size: 24px;
-  }
-  
-  .menu {
-    list-style-type: none;
+    left: -250px;
+    padding-top: 30px;
+    box-shadow: 4px 0 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.4s ease;
+    border-radius: 0 10px 10px 0;
+    z-index: 999;
+}
+
+#sidebar.open {
+    transform: translateX(250px);
+}
+
+#sidebar nav ul {
+    margin-top: 30px;
+    list-style: none;
     padding: 0;
-  }
-  
-  .menu li {
-    padding: 10px 20px;
-  }
-  
-  .menu a {
-    color: #ecf0f1;
+}
+
+#sidebar nav ul li {
+    padding: 20px 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+#sidebar nav ul li a {
+    color: #fff;
     text-decoration: none;
+    display: block;
     font-size: 18px;
-  }
-  
-  .menu a:hover {
-    background-color: #34495e;
-    border-radius: 5px;
-    padding-left: 10px;
-  }
+    transition: all 0.3s ease;
+}
+
+#sidebar nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding-left: 20px;
+}
+
+.menu-toggle {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    font-size: 30px;
+    background: transparent;
+    border: none;
+    color: #856d6d;
+    padding: 15px;
+    cursor: pointer;
+    z-index: 1000;
+    transition: all 0.3s ease;
+}
+
+.menu-toggle.open {
+    transform: rotate(90deg);
+}
   
   /* Main Dashboard Styles */
   .dashboard {
@@ -56,10 +75,15 @@ body {
     width: calc(100% - 250px);
   }
   
-  .welcome h1 {
-    color: #2c3e50;
-    font-size: 32px;
-  }
+  header {
+    background: linear-gradient(135deg, green, yellow);
+    color: #fff;
+    padding: 40px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+  
   
   #courses, #profile {
     margin-top: 30px;
@@ -84,7 +108,7 @@ body {
   }
   
   .courses-table th {
-    background-color: #34495e;
+    background: linear-gradient(135deg, rgba(0, 100, 0, 1), rgba(204, 153, 0, 1));
     color: #fff;
   }
   

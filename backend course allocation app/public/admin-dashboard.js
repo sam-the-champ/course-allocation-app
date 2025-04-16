@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const totalLecturers = document.getElementById("totalLecturers");
     const allocatedCourses = document.getElementById("allocatedCourses");
     const unallocatedCourses = document.getElementById("unallocatedCourses");
-    const logoutBtn = document.getElementById("logoutBtn");
+    
 
     // Function to update the stats dynamically (replace these with real data from your backend or API)
     const updateStats = async () => {
@@ -71,23 +71,23 @@ document.addEventListener("DOMContentLoaded", function() {
 
     }
 
+      
+    const logoutBtn = document.getElementById("logoutBtn");
     async function logout(){
-        try{
-            const response = await fetch(`http://localhost:5000/api/auth/logout`, {
-                method: 'GET',
-                headers: {
-                  'Content-Type': 'application/json',
-                },
-              });
-        }catch(error){
-            alert("Error logging out")
+            try{
+                const response = await fetch(`http://localhost:5000/api/auth/logout`, {
+                    method: 'GET',
+                    headers: {
+                      'Content-Type': 'application/json',
+                    },
+                  });
+            }catch(error){
+                alert("Error logging out")
+            }
         }
-    }
-
-    logoutBtn.addEventListener("click", ()=>{
-        logout();
-    })
-
     
+        logoutBtn.addEventListener("click", ()=>{
+            logout();
+        })
 
 });
