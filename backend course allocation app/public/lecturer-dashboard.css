@@ -9,7 +9,7 @@ body {
   /* Sidebar Navigation Styles */
 #sidebar {
     width: 250px;
-    background: linear-gradient(135deg, rgba(0, 100, 0, 1), rgba(204, 153, 0, 1));
+    background-color: green;
     color: #fff;
     height: 100%;
     position: fixed;
@@ -76,7 +76,7 @@ body {
   }
   
   header {
-    background: linear-gradient(135deg, green, yellow);
+    background-color: green;
     color: #fff;
     padding: 40px 20px;
     border-radius: 10px;
@@ -108,7 +108,7 @@ body {
   }
   
   .courses-table th {
-    background: linear-gradient(135deg, rgba(0, 100, 0, 1), rgba(204, 153, 0, 1));
+    background-color: green;
     color: #fff;
   }
   

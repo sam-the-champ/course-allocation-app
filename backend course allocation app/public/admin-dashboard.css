@@ -16,7 +16,7 @@ body {
 
 #sidebar {
     width: 250px;
-    background: linear-gradient(135deg, rgba(0, 100, 0, 1), rgba(204, 153, 0, 1));
+    background-color: green;
     color: #fff;
     height: 100%;
     position: fixed;
@@ -83,7 +83,7 @@ body {
 }
 
 header {
-    background: linear-gradient(135deg, green, yellow);
+    background-color: green;
     color: #fff;
     padding: 40px 20px;
     border-radius: 10px;
@@ -119,29 +119,29 @@ h1 {
 .stat-card h3 {
     font-size: 20px;
     margin-bottom: 15px;
-    color: #444;
+    color: white;
 }
 
 .stat-card p {
     font-size: 28px;
     font-weight: bold;
-    color: #2a5298;
+    color: yellow;
 }
 
 .stat-card:nth-child(1) {
-    background: linear-gradient(135deg, #006400, #FFDB58);
+    background-color: green;
 }
 
 .stat-card:nth-child(2) {
-    background: linear-gradient(135deg, #32CD32, #FFFF00);
+    background-color: green;
 }
 
 .stat-card:nth-child(3) {
-    background: linear-gradient(135deg, #556B2F, #FFC300);
+    background-color: green;
 }
 
 .stat-card:nth-child(4) {
-    background: linear-gradient(135deg, #50C878, #FFFFE0);
+    background-color: green;
 }
 
 .admin-notes {

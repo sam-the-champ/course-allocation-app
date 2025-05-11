@@ -12,7 +12,7 @@
   }
   #sidebar {
     width: 250px;
-    background: linear-gradient(135deg, rgba(0, 100, 0, 1), rgba(204, 153, 0, 1));
+    background-color: green;
     color: #fff;
     height: 100%;
     position: fixed;
@@ -123,6 +123,6 @@
   }
   
   .submit-button:hover {
-    background-color: rgba(204, 153, 0, 1);
+    background-color: yellow;
   }
   
